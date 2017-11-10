@@ -1,27 +1,58 @@
-# 这是一个简单的自用babel制作npm包的脚手架
+## Introduce  
 
-### 安装步骤
+this is a simple script use useragent to judge browser
 
-    1.请确保全局安装了 babel npm
+## Quick to start:
 
-    2.下载克隆此工程
+install:     
+`npm install --save yu-judge-browser `    
+import:  
+`import browser from 'yu-judge-browser' `
 
-    3.npm install
+## Example
 
-    4.npm run build (编译脚本)
+>You can use `npm run dev` to check the example file in node package
 
-### 目录结构
+    console.log(browser)
+    
+    {
+        "versions":{
+            "trident":false,
+            "presto":false,
+            "webKit":true,
+            "gecko":false,
+            "mobile":false,
+            "ios":false,
+            "android":false,
+            "iPhone":true,
+            "iPad":false,
+            "qq":false,
+            "wechat":false,
+            "webApp":false
+        },
+        "language":"zh-cn"
+    }"
+        
+## JSDoc
 
-> `lib 发布npm包的环境`
+ * @returns {object[]} versions - true or false of different terminals
+ * @returns {boolean} [versions[].trident] - is ie ?
+ * @returns {boolean} [versions[].presto] - is opera ?
+ * @returns {boolean} [versions[].AppleWebKit] - is apple,chrome ?
+ * @returns {boolean} [versions[].gecko] - is firefox ?
+ * @returns {boolean} [versions[].mobile] - is mobile ?
+ * @returns {boolean} [versions[].ios] - is ios ?
+ * @returns {boolean} [versions[].android] - is android ?
+ * @returns {boolean} [versions[].iPhone] - is iPhone ?
+ * @returns {boolean} [versions[].iPad] - is iPad ?
+ * @returns {boolean} [versions[].qq] - is qq browser ?
+ * @returns {boolean} [versions[].wechat] - is wechat browser ?
+ * @returns {boolean} [versions[].webApp] - is webApp ?
+ * @returns {string} language - language of this web
 
-> `src 源文件脚本存放目录`
+## Links
 
-> .gitignore git 忽略文件
-
-> index.js npm官方入口,可以在package.json中配置
-
-> .babelrc babel配置文件
-
-> package.json 包信息
-
-> README.md 说明文档（本文件）
+##### github  
+see https://github.com/watanabeyu0709/yu-judge-browser
+##### npm  
+see https://www.npmjs.com/package/yu-judge-browser
