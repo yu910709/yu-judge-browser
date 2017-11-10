@@ -11,8 +11,6 @@ import:
 
 ## Example
 
->You can use `npm run dev` to check the example file in node package
-
     console.log(browser)
     
     {
