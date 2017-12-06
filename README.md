@@ -2,7 +2,7 @@
 
 this is a simple script use useragent to judge browser
 
-## Quick to start:
+## Quick to start
 
 install:     
 `npm install --save yu-judge-browser `    
