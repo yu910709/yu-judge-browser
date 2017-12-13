@@ -1,18 +1,17 @@
-## Introduce  
-
+## Introduce
 this is a simple script use useragent to judge browser
 
 ## Quick to start
-
-install:     
-`npm install --save yu-judge-browser `    
-import:  
-`import browser from 'yu-judge-browser' `
+Using npm:
+```shell
+$ npm install --save yu-judge-browser
+$ import browser from 'yu-judge-browser'
+```
 
 ## Example
-
+```js
     console.log(browser)
-    
+
     {
         "versions":{
             "trident":false,
@@ -30,9 +29,10 @@ import:
         },
         "language":"zh-cn"
     }"
-        
-## JSDoc
+ ```
 
+## JSDoc
+```jsdoc
  * @returns {object[]} versions - true or false of different terminals
  * @returns {boolean} [versions[].trident] - is ie ?
  * @returns {boolean} [versions[].presto] - is opera ?
@@ -47,10 +47,8 @@ import:
  * @returns {boolean} [versions[].wechat] - is wechat browser ?
  * @returns {boolean} [versions[].webApp] - is webApp ?
  * @returns {string} language - language of this web
+```
 
 ## Links
-
-##### github  
-see https://github.com/watanabeyu0709/yu-judge-browser
-##### npm  
-see https://www.npmjs.com/package/yu-judge-browser
+[![github](http://p0kpwl4c8.bkt.clouddn.com/icon/github_c.png!icon_sm "https://github.com/watanabeyu0709/yu-judge-browser")](https://github.com/watanabeyu0709/yu-judge-browser)
+[![npm](http://p0kpwl4c8.bkt.clouddn.com/icon/npm_c.png!icon_sm "https://www.npmjs.com/package/yu-judge-browser")](https://www.npmjs.com/package/yu-judge-browser)
