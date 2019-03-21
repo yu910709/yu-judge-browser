@@ -1,6 +1,6 @@
 {
   "name": "yu-judge-browser",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "a simple plugin develop cli with babel",
   "main": "index.js",
   "scripts": {

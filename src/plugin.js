@@ -14,6 +14,9 @@ const YuJudgeBrowser = {
             qq: (u.indexOf('QQ') > -1)&&!(u.indexOf('MicroMessenger') > -1), //是否QQ
             wechat: u.indexOf('MicroMessenger') > -1, //是否微信
             webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+            uc:u.indexOf('UCBrowser') > -1, //是否UC浏览器
+            dingding:u.indexOf('DingTalk') > -1, //是否UC浏览器
+            canOpenTab:(u.indexOf('UCBrowser') < 0)&&(u.indexOf('MicroMessenger') < 0)&&(u.indexOf('DingTalk') < 0),//判断是否可以新开窗口
         };
     }(),
     language:(navigator.browserLanguage || navigator.language).toLowerCase()
